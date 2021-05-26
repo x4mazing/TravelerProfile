@@ -1,5 +1,5 @@
 #TravellerProfileCSE2102
 
-This was an assignment to exemplify polymorphism, Java Swing, and structured code.
+This was an assignment to exemplify Java Swing, File I/O, and structured code.
 
-There is support for Java swing, menu traversal, File I/O (primative loading states)
+This is designed to mock a travel agency storing traveller billing/medical information
