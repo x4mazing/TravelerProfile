@@ -16,45 +16,6 @@ public class TravProfInterface {
     }
 
     private void getUserChoice(){    //GET USER SELECTED OPERATIONS
-//        Scanner scan = new Scanner(System.in);
-//        String selection = "";
-//        while (!selection.equals("0")) {
-//            System.out.println("=========================");
-//            System.out.println("Please Select a menu option:\n" +
-//                    "1. Enter a New Traveller Profile\n" +
-//                    "2. Delete a traveller by name\n" +
-//                    "3. Display a traveller profile\n" +
-//                    "4. Update a traveller profile\n" +
-//                    "5. Display all traveller profiles\n" +
-//                    "6. Write to database\n" +
-//                    "7. Initialize Database\n" +
-//                    "0. Exit Program \n");
-//            selection = scan.nextLine();
-//
-//            switch (selection) {            //case for menu options
-//                case "1":
-//                    createNewTravProf();
-//                    break;
-//                case "2":
-//                    deleteTravProf();
-//                    break;
-//                case "3":
-//                    findTravProf();
-//                    break;
-//                case "4":
-//                    updateTravProf();
-//                    break;
-//                case "5":
-//                    displayAllTravProf();
-//                    break;
-//                case "6":
-//                    writeToDB();
-//                    break;
-//                case "7":
-//                    initDB();
-//                    break;
-//            }
-//        }
 
         if(!repeated){
             mainFrame = new JFrame("Integrated Travel System");
@@ -142,43 +103,6 @@ public class TravProfInterface {
         final String[] MdContact = new String[1];
         final String[] MdPhone = new String[1];
         final float[] TripCost = new float[1];
-                                                        //request all variables and store them in temporary variables
-//        System.out.println("Please enter your Agent ID: ");
-//        travAgentID = sc.nextLine();
-//
-//        System.out.println("Please enter the traveler's First name: ");
-//        FirstName = sc.nextLine();
-//
-//        System.out.println("Please enter the traveler's Last name: ");
-//        LastName = sc.nextLine();
-//
-//        System.out.println("Please enter the traveler's Address: ");
-//        Address = sc.nextLine();
-//
-//        System.out.println("Please enter the traveler's Phone number: ");
-//        Phone = sc.nextLine();
-//
-//        System.out.println("Please indicate the Travel type: ");
-//        TravelType = sc.nextLine();
-//
-//        System.out.println("Please enter the Payment type: ");
-//        PaymentType = sc.nextLine();
-//
-//        System.out.println("Please enter the Trip cost: ");
-//        TripCost = Float.parseFloat(sc.nextLine());             //parse the float from string
-//
-//        System.out.println("Please enter any Allergies: ");
-//        AlgType = sc.nextLine();
-//
-//        System.out.println("Please enter any Illnesses: ");
-//        IllType = sc.nextLine();
-//
-//        System.out.println("Please enter the Medical contact: ");
-//        MdContact = sc.nextLine();
-//
-//        System.out.println("Please enter the Medical contact phone: ");
-//        MdPhone = sc.nextLine();
-
 
         JLabel Header, lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12;
         JTextField txt1, txt2, txt3, txt4, txt5, txt8, txt9, txt10, txt11, txt12;
@@ -338,18 +262,6 @@ public class TravProfInterface {
     }
 
     public void deleteTravProf(){                   //DELETE A TRAVEL PROFILE
-//        Scanner sc = new Scanner(System.in);
-//
-//        System.out.println("Please enter your ID: ");   //Request Travel Agent ID
-//        String travAgentID = sc.nextLine();
-//
-//        System.out.println("Please enter the Traveler's Last name: "); //Request last name
-//        String LastName = sc.nextLine();
-//
-//        if(database.deleteProfile(travAgentID, LastName))      //print if there was success in deletion
-//            System.out.println("Profile Deleted.");
-//        else
-//            System.out.println("Profile not found.");
 
         JLabel Header, lb1, lb2;
         JTextField txt1, txt2;
@@ -424,72 +336,6 @@ public class TravProfInterface {
     }
 
     public void updateTravProf(){                       //UPDATE ANY OF THE VARIABLES IN A PROFILE.
-//        Scanner sc = new Scanner(System.in);
-//
-//        System.out.println("Please enter your ID: ");   //Request Travel Agent ID
-//        String travAgentID = sc.nextLine();
-//
-//        System.out.println("Please enter the Traveler's Last name: ");      //Request last name
-//        String LastName = sc.nextLine();
-//
-//        TravProf profile = database.findProfile(travAgentID, LastName);     //find the profile in the Database
-//
-//        if(profile == null)
-//            System.out.println("Profile not found.");
-//        else {
-//            System.out.println("Please select which field to change: \n" +
-//                    "1. Address \n" +
-//                    "2. Phone number \n" +
-//                    "3. Travel type \n" +
-//                    "4. Payment type \n" +
-//                    "5. Trip cost \n" +
-//                    "6. Allergy \n" +
-//                    "7. Illnesses \n" +
-//                    "8. Medical Contact \n" +
-//                    "9. Medical Phone number \n");
-//
-//            String selection = sc.nextLine();
-//
-//            switch (selection) {                         //case to update a specific variable
-//                case "1":
-//                    System.out.println("Enter the new Address: ");
-//                    profile.updateAddress(sc.nextLine());
-//                    break;
-//                case "2":
-//                    System.out.println("Enter the new Phone number: ");
-//                    profile.updatePhone(sc.nextLine());
-//                    break;
-//                case "3":
-//                    System.out.println("Enter the new Travel type: ");
-//                    profile.updateTravelType(sc.nextLine());
-//                    break;
-//                case "4":
-//                    System.out.println("Enter the new Payment type: ");
-//                    profile.updatePaymentType(sc.nextLine());
-//                    break;
-//                case "5":
-//                    System.out.println("Enter the new Trip cost: ");
-//                    profile.updateTripCost(sc.nextLine());
-//                    break;
-//                case "6":
-//                    System.out.println("Enter the Allergy update: ");
-//                    profile.getMedCondInfo().updateAlgType(sc.nextLine());
-//                    break;
-//                case "7":
-//                    System.out.println("Enter the Illness update: ");
-//                    profile.getMedCondInfo().updateIllType(sc.nextLine());
-//                    break;
-//                case "8":
-//                    System.out.println("Enter the Medical contact update: ");
-//                    profile.getMedCondInfo().updateMdContact(sc.nextLine());
-//                    break;
-//                case "9":
-//                    System.out.println("Enter the new Medical contact phone number: ");
-//                    profile.getMedCondInfo().updateMdPhone(sc.nextLine());
-//                    break;
-//            }
-//            System.out.println("Field updated.");
-//        }
 
         JLabel Header, lb1, lb2, lb3;
         JTextField txt1;
@@ -615,15 +461,6 @@ public class TravProfInterface {
     }
 
     public void findTravProf(){                     //FIND PROFILE AND DISPLAY IT
-//        Scanner sc = new Scanner(System.in);
-//
-//        System.out.println("Please enter your ID: ");                   //Request Travel Agent ID
-//        String travAgentID = sc.nextLine();
-//
-//        System.out.println("Please enter the Traveler's Last Name: ");  //request last name
-//        String LastName = sc.nextLine();
-//
-//        displayTravProf(database.findProfile(travAgentID, LastName));   //call to display the profile
 
         JLabel Header, lb1, lb2;
         JTextField txt1, txt2;
@@ -683,24 +520,6 @@ public class TravProfInterface {
     }
 
     public void displayTravProf(TravProf traveler){ //DISPLAY THE PROFILE PROVIDED
-//        try {                                       //Try to print
-//            System.out.println("Travel Agent ID: " + traveler.gettravAgentID());
-//            System.out.println("First Name: " + traveler.getFirstName());
-//            System.out.println("Last Name: " + traveler.getLastName());
-//            System.out.println("Address: " + traveler.getAddress());
-//            System.out.println("Phone Number: " + traveler.getPhone());
-//            System.out.println("Trip Cost: " + traveler.getTripCost());
-//            System.out.println("Travel Type: " + traveler.getTravelType());
-//            System.out.println("Payment Method: " + traveler.getPaymentType());
-//
-//            System.out.println("\nMedical Condition Info:\nAllergies: " + traveler.getMedCondInfo().getAlgType());
-//            System.out.println("Illnesses: " + traveler.getMedCondInfo().getIllType());
-//            System.out.println("Emergency Contact: " + traveler.getMedCondInfo().getMdContact());
-//            System.out.println("Emergency Phone number: " + traveler.getMedCondInfo().getMdPhone());
-//        }
-//        catch(Exception e){                         //IF THERE IS A NULL PROFILE, IT DOES NOT EXIST.
-//            System.out.println("Profile not found.");
-//        }
 
         JLabel Header, lb1, lb2, lb3, lb4, lb5, lb6, lb7, lb8, lb9, lb10, lb11, lb12;
         JButton btn;
@@ -784,10 +603,6 @@ public class TravProfInterface {
     }
 
     public void displayAllTravProf(){                //INTERATE ENTIRETY OF THE TRAVELER LIST AND DISPLAY THEM
-//        Scanner sc = new Scanner(System.in);        //declare a new scanner
-//
-//        System.out.println("Please enter your ID: ");   //request the Traveler agent
-//        String travAgentID = sc.nextLine();
 
         JLabel Header;
         final JLabel[] lb1 = new JLabel[1];
@@ -1002,10 +817,6 @@ public class TravProfInterface {
     }
 
     public static void main(String[] args){
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Please enter the database text file name, include .txt extension: ");
-//
-//        String fileName = sc.nextLine();
 
         JFrame fileframe = new JFrame("Integrated Travel System");
         fileframe.setSize(400,200);
